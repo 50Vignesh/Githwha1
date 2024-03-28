@@ -30,8 +30,8 @@ def _display_detected_frames(conf, model, st_count, st_frame, image):
     # Predict the objects in the image using YOLOv8 model
     res = model.predict(image, conf=conf)
     
-    inText = 'Vehicle In'
-    outText = 'Vehicle Out'
+    inText = 'Person In'
+    outText = 'Person Out'
     if config.OBJECT_COUNTER1 != None:
         for _, (key, value) in enumerate(config.OBJECT_COUNTER1.items()):
             inText += ' - ' + str(key) + ": " +str(value)
