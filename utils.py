@@ -162,7 +162,7 @@ def infer_uploaded_webcam(conf, model):
         flag = st.button(
             label="Stop running"
         )
-        vid_cap = cv2.VideoCapture(0)  # local camera
+        vid_cap = cv2.VideoCapture(1)  # local camera
         st_count = st.empty()
         st_frame = st.empty()
         while not flag:
