@@ -15,7 +15,7 @@ st.set_page_config(
     )
 
 # main page heading
-st.title("Automatic Passenger Detection")
+st.title("AutoDetect: Automatic Passenger Detection")
 
 # sidebar
 st.sidebar.header("Model Configuration")
